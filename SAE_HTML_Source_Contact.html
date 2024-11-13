@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="moncss_sources.css" >
+		<title>Mon site Web</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="https://www.univ-tours.fr/" target="_blank"> <img src="Images/logoiut1.png" alt="logo iut de Blois"></a>
+				<ul>
+					<li><a href="SAE_HTML_CV.html">Mon CV</a></li>
+					<li><a href="SAE_HTML_Centre_interet.html">Mes centres d'interets(en anglais)</a></li>
+					<li><a href="SAE_HTML_Projet_Professionnel.html">Mon projet professionnel(en anglais)</a></li>
+				</ul>
+			</nav>
+			<h1>Contactez-moi</h1>
+		</header>
+		<div class="form-container">
+			<form action="traitement_formulaire.php" method="post">
+				<label for="nom">Nom:</label>
+				<input type="text" id="nom" name="nom" required>
+
+				<label for="prenom">Prénom:</label>
+				<input type="text" id="prenom" name="prenom" required>
+
+				<label for="email">Adresse e-mail:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" rows="5" required></textarea>
+
+				<button type="submit">Envoyer</button>
+			</form>
+		</div>
+		
+		<a href="https://www.linkedin.com/in/martin-frain-07476b331/" target="_blank" class="linkedin-link">
+					<img src="Images/linkedin.svg" id="linkedin-logo"></a>
+		<footer>
+			© Martin Frain 2024 Tous Droits Réservés
+		</footer>
+	</body>
+</html>
+		

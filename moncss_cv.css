@@ -1,0 +1,102 @@
+h2{
+	font-size:30px;
+	text-decoration:underline;
+}
+
+#a{
+	grid-area:a1;
+}
+
+.b{
+	grid-area:b1;
+}
+
+.c{
+	grid-area:c1;
+	margin:10px;
+}
+
+#d{
+	grid-area:d1;
+}
+
+header{
+	grid-area:hd1;
+	margin:-10px;
+}
+
+nav{
+	grid-area:nav1;
+}
+
+footer{
+	grid-area:ft1;
+	background-color:#173b76;
+	color:white;
+	text-align:center;
+	padding:20px;
+	margin:-10px;
+}
+
+.wrapper{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-template-areas:
+	"hd1 hd1 hd1"
+	"nav1 a1 d1"
+	"nav1 b1 b1"
+	"nav1 c1 c1"
+	"ft1 ft1 ft1"
+}
+
+body{
+	background-color:white;
+}
+
+
+strong{
+	font-size:30px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+/* Styles pour le conteneur de navigation */
+nav {
+    display: flex;              /* Aligne le logo et le menu horizontalement */
+    align-items: center;   /* Centre verticalement le logo avec le menu */
+    background-color:#173b76;   /* Fond vert pour le menu */
+    padding: 10px 20px;
+}
+
+
+
+/* Styles pour le logo */
+.logo {
+    height: 40px;               /* Taille du logo */
+    margin-right: 20px;         /* Espacement entre le logo et le menu */
+}
+
+/* Styles pour la liste de navigation */
+nav ul {
+    list-style-type: none;      /* Supprime les puces */
+    display: flex;              /* Affiche les éléments en ligne */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour les éléments de la liste */
+nav ul li {
+    margin: 0 15px;             /* Espacement entre chaque lien */
+}
+
+nav ul li a {
+    color: white;               /* Texte en blanc */
+    text-decoration: none;      /* Supprime le soulignement */
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+nav ul li a:hover {
+    background-color: #2c35b7;  /* Fond plus foncé au survol */
+    border-radius: 4px;         /* Coins arrondis au survol */
+}
